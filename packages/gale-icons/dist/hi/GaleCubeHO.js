@@ -1,0 +1,6 @@
+import * as React from 'react';
+
+const SvgGaleCubeHO = (props) => (React.createElement("svg", { width: '1.5rem', height: '1.5rem', viewBox: '0 0 24 24', xmlns: 'http://www.w3.org/2000/svg', className: 'w-6 h-6', stroke: 'currentColor', ...props },
+    React.createElement("path", { d: 'M21 7.5L12 2.25L3 7.5M21 7.5L12 12.75M21 7.5V16.5L12 21.75M3 7.5L12 12.75M3 7.5V16.5L12 21.75M12 12.75V21.75', strokeWidth: 1.5, strokeLinecap: 'round', strokeLinejoin: 'round' })));
+
+export { SvgGaleCubeHO as default };

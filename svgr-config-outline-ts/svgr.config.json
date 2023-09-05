@@ -1,0 +1,42 @@
+{
+  "icon": "1.5rem",
+  "typescript": true,
+  "dimensions": true,
+  "replaceAttrValues": {
+    "black": "currentColor"
+  },
+  "expandProps": "end",
+  "svgProps": {
+    "stroke": "currentColor"
+  },
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "addClassesToSVGElement",
+        "params": {
+          "classNames": ["w-6", "h-6"]
+        }
+      },
+      {
+        "name": "removeAttrs",
+        "params": {
+          "attrs": "(fill|stroke)"
+        }
+      },
+
+      {
+        "name": "addAttributesToSVGElement",
+        "params": {
+          "attributes": [
+            {
+              "width": 24
+            },
+            {
+              "height": 24
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

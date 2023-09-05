@@ -1,0 +1,19 @@
+{
+  "name": "gale-icons",
+  "author": "Maeve Du",
+  "version": "1.0.0",
+  "description": "React icon components created from SVG files",
+  "main": "cjs/index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "index.js",
+    "cjs"
+  ],
+  "scripts": {},
+  "keywords": [],
+  "sideEffects": false,
+  "license": "MIT"
+}

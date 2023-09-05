@@ -1,0 +1,40 @@
+{
+  "name": "svg-to-react-icon-component",
+  "author": "Maeve Du",
+  "version": "1.0.0",
+  "description": "Generate React icon components from SVG files",
+  "type": "module",
+  "files": [
+    "packages/gale-icons"
+  ],
+  "scripts": {
+    "prepkg": "rimraf packages/gale-icons/dist",
+    "pkg": "rollup -c",
+    "prebuild": "rimraf src/Generated-icon-components",
+    "svgr-outline": "svgr --config-file svgr-config-outline-ts/svgr.config.json -d src/Generated-icon-components assets/outline-icons-sep",
+    "build-outline": "npm run svgr-outline",
+    "build-solid": "npm run svgr-outline"
+  },
+  "keywords": [
+    "React",
+    "SVG",
+    "Icon"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.22.10",
+    "@babel/preset-env": "^7.22.14",
+    "@babel/preset-react": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-typescript": "^11.1.3",
+    "@svgr/cli": "^8.1.0",
+    "@types/react": "^18.2.21",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.28.1",
+    "typescript": "^5.2.2"
+  }
+}

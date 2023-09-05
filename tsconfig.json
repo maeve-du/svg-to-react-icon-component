@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ESNext",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "packages/gale-icons/dist/hi/types",
+    "sourceMap": true,
+    "outDir": "packages/gale-icons/dist/hi",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": false,
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "scripts"]
+}
