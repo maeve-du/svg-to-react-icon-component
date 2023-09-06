@@ -12,6 +12,11 @@
     "index.js",
     "cjs"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:maeve-du/svg-to-react-icon-component.git"
+  },
+  "homepage": "https://github.com/maeve-du/svg-to-react-icon-component/tree/master/packages/gale-icons",
   "scripts": {},
   "keywords": [],
   "sideEffects": false,
