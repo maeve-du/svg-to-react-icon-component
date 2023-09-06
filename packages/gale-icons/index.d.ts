@@ -1,2 +1,1 @@
-// THIS FILE IS AUTO GENERATED
-export * from './dist/hi'
+export * from './dist/hi/types/index.d.ts'
