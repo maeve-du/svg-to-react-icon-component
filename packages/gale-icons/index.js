@@ -1,1 +1,1 @@
-export * as index from 'dist/hi/index.js'
+export * as index from './dist/hi/index.js'

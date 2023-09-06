@@ -1,1 +1,1 @@
-export * from 'dist/hi/types/index.d.ts'
+export * from './dist/hi/types/index.d.ts'
