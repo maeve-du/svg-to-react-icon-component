@@ -34,9 +34,11 @@ npm install gale-icons
 
 Using Galeicons in your React components is a breeze. Import the icon component and include it in your JSX/TSX. Customize the icon's appearance by applying CSS classes or passing SVG element attributes.
 
+### Default
+
 Here's a basic example of how to use Galeicons:
 
-### Default
+If no custom attributes are passed, you'll get a default 24x24px icon with the color based on your project's current color
 
 ```js
 import React from 'react'
@@ -55,7 +57,7 @@ function App() {
 export default App
 ```
 
-If no custom attributes are passed, you'll get a default 24x24px icon with the color based on your project's current color
+🎉 Now you have a beautiful heart icon in your React project.
 
 ### Customizing Icons with SVG Attributes
 
@@ -98,4 +100,6 @@ function App() {
 export default App
 ```
 
-🎉 Now you have a beautiful heart icon in your React project.
+##
+
+Galeicons is created with ❤️ by Maeve Du.
