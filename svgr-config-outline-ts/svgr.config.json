@@ -12,27 +12,20 @@
   "svgoConfig": {
     "plugins": [
       {
-        "name": "addClassesToSVGElement",
-        "params": {
-          "classNames": ["w-6", "h-6"]
-        }
-      },
-      {
         "name": "removeAttrs",
         "params": {
           "attrs": "(fill|stroke)"
         }
       },
-
       {
         "name": "addAttributesToSVGElement",
         "params": {
           "attributes": [
             {
-              "width": 24
+              "width": "1.5rem"
             },
             {
-              "height": 24
+              "height": "1.5rem"
             }
           ]
         }

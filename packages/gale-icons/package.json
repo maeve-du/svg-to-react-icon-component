@@ -1,24 +1,31 @@
 {
   "name": "gale-icons",
   "author": "Maeve Du",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "description": "React icon components created from SVG files",
   "main": "cjs/index.js",
   "module": "index.js",
-  "types": "index.d.ts",
+  "typings": "index.d.ts",
   "files": [
+    "cjs",
     "dist",
     "index.d.ts",
-    "index.js",
-    "cjs"
+    "index.js"
   ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:maeve-du/svg-to-react-icon-component.git"
   },
   "homepage": "https://github.com/maeve-du/svg-to-react-icon-component/tree/master/packages/gale-icons",
+  "keywords": [
+    "react",
+    "icons",
+    "icon",
+    "svg",
+    "components",
+    "component"
+  ],
   "scripts": {},
-  "keywords": [],
   "sideEffects": false,
   "license": "MIT"
 }
