@@ -4,9 +4,9 @@
     "target": "ESNext",
     "declaration": true,
     // "declarationMap": true,
-    "declarationDir": "packages/gale-icons/dist/hi/types",
+    "declarationDir": "packages/gale-icons/gi/types",
     // "sourceMap": true,
-    "outDir": "packages/gale-icons/dist/hi",
+    "outDir": "packages/gale-icons/gi",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": false,
@@ -16,6 +16,6 @@
     "skipLibCheck": true,
     "typeRoots": ["node_modules/@types"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/Generated-icon-components/gi"],
   "exclude": ["node_modules", "build", "scripts"]
 }

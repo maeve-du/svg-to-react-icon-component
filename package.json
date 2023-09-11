@@ -8,11 +8,15 @@
     "packages/gale-icons"
   ],
   "scripts": {
-    "prepkg": "rimraf packages/gale-icons/dist",
+    "prepkg-hi": "rimraf packages/gale-icons/hi",
+    "prepkg-gi": "rimraf packages/gale-icons/gi",
     "pkg": "rollup -c",
-    "prebuild": "rimraf src/Generated-icon-components",
-    "svgr-outline": "svgr --config-file svgr-config-outline-ts/svgr.config.json -d src/Generated-icon-components assets/outline-icons-sep",
-    "build-outline": "npm run svgr-outline",
+    "prebuild-hi": "rimraf src/Generated-icon-components/hi",
+    "prebuild-gi": "rimraf src/Generated-icon-components/gi",
+    "svgr-hi-outline": "svgr --config-file svgr-config-outline-ts/svgr.config.json -d src/Generated-icon-components/hi assets/outline-icons-sep",
+    "svgr-gi-outline": "svgr --config-file svgr-config-outline-ts/svgr.config.json -d src/Generated-icon-components/gi assets/galeicons-sep/outline",
+    "build-hi-outline": "npm run svgr-hi-outline",
+    "build-gi-outline": "npm run svgr-gi-outline",
     "build-solid": "npm run svgr-outline"
   },
   "keywords": [

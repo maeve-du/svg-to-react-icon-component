@@ -26,8 +26,17 @@
             },
             {
               "height": "1.5rem"
+            },
+            {
+              "fill": "none"
             }
           ]
+        }
+      },
+      {
+        "name": "mergePaths",
+        "params": {
+          "force": true
         }
       }
     ]
