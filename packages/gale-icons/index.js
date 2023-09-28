@@ -1,2 +1,2 @@
-export * as index from './hi/index.js'
-export * as index from './gi/index.js'
+export * from './hi/index.js'
+export * from './gi/index.js'

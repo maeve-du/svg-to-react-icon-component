@@ -1,0 +1,12 @@
+import createGaleIcon from './CreateGaleIcon'
+
+const SvgGaleOIconPaintbrush = createGaleIcon('SvgGaleOIconCode', [
+  [
+    'path',
+    {
+      d: 'M18 5C19.1046 5 20 5.89543 20 7V9C20 10.1046 19.1046 11 18 11H12C10.8954 11 10 11.8954 10 13V15M5 7H17C17.5523 7 18 6.55228 18 6V4C18 3.44772 17.5523 3 17 3H5C4.44772 3 4 3.44772 4 4V6C4 6.55228 4.44772 7 5 7ZM9 21H11C11.5523 21 12 20.5523 12 20V16C12 15.4477 11.5523 15 11 15H9C8.44772 15 8 15.4477 8 16V20C8 20.5523 8.44772 21 9 21Z',
+    },
+  ],
+])
+
+export default SvgGaleOIconPaintbrush

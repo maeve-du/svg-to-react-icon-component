@@ -29,3 +29,13 @@ export const rollupHiConfig = {
     },
   ],
 }
+
+export const dtsGiConfig = {
+  input: './packages/gale-icons/gi/types/index.d.ts',
+  output: [{ file: './packages/gale-icons/gi/index.d.ts', format: 'es' }],
+}
+
+export const dtsHiConfig = {
+  input: './packages/gale-icons/hi/types/index.d.ts',
+  output: [{ file: './packages/gale-icons/hi/index.d.ts', format: 'es' }],
+}

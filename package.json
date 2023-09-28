@@ -8,16 +8,19 @@
     "packages/gale-icons"
   ],
   "scripts": {
+    "--------1--------": "1",
+    "prebuild-hi": "rimraf src/Generated-icon-components/hi",
+    "prebuild-gi": "rimraf src/Generated-icon-components/gi",
+    "build-gi-outline": "npm run svgr-gi-outline",
+    "build-solid": "npm run svgr-outline",
+    "--------2--------": "2",
     "prepkg-hi": "rimraf packages/gale-icons/hi",
     "prepkg-gi": "rimraf packages/gale-icons/gi",
     "pkg": "rollup -c",
-    "prebuild-hi": "rimraf src/Generated-icon-components/hi",
-    "prebuild-gi": "rimraf src/Generated-icon-components/gi",
+    "--------": "--------",
     "svgr-hi-outline": "svgr --config-file svgr-config-outline-ts/svgr.config.json -d src/Generated-icon-components/hi assets/outline-icons-sep",
-    "svgr-gi-outline": "svgr --config-file svgr-config-outline-ts/svgr.config.json -d src/Generated-icon-components/gi assets/galeicons-sep/outline",
-    "build-hi-outline": "npm run svgr-hi-outline",
-    "build-gi-outline": "npm run svgr-gi-outline",
-    "build-solid": "npm run svgr-outline"
+    "svgr-gi-outline": "svgr --config-file svgr-config-outline-ts/svgr.config.json -d src/Generated-icon-components/gi assets/galeicons/sep-outline",
+    "build-hi-outline": "npm run svgr-hi-outline"
   },
   "keywords": [
     "React",
@@ -40,6 +43,7 @@
     "@types/react": "^18.2.21",
     "rimraf": "^5.0.1",
     "rollup": "^3.28.1",
+    "rollup-plugin-dts": "^6.0.2",
     "typescript": "^5.2.2"
   }
 }

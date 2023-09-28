@@ -1,14 +1,22 @@
 import resolve from '@rollup/plugin-node-resolve'
 import { babel } from '@rollup/plugin-babel'
 import typescript from '@rollup/plugin-typescript'
-import { rollupHiConfig, rollupGiConfig } from './constants.js'
+import { dts } from 'rollup-plugin-dts'
+import { rollupHiConfig, rollupGiConfig, dtsGiConfig, dtsHiConfig } from './constants.js'
 // import jsx from 'acorn-jsx'
 
 const config = {
   // ...rollupHiConfig,
-  ...rollupGiConfig,
+  // ...dtsHiConfig,
+  // ...rollupGiConfig,
+  ...dtsGiConfig,
   external: [/@babel\/runtime/, 'react'],
-  plugins: [resolve(), babel({ babelHelpers: 'runtime', plugins: ['@babel/plugin-transform-runtime'] }), typescript()],
+  plugins: [
+    resolve(),
+    babel({ babelHelpers: 'runtime', plugins: ['@babel/plugin-transform-runtime'] }),
+    typescript(),
+    dts(),
+  ],
   // acornInjectPlugins: [jsx()],
 }
 
